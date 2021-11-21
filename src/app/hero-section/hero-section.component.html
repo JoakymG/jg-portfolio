@@ -1,0 +1,42 @@
+<div class="hero-container">
+  <div class="hero-section">
+    <div>
+      <img
+        class="hero__profil-picture"
+        src="https://img5.goodfon.com/wallpaper/nbig/5/d1/rys-dikaia-koshka-vzgliad-priroda-portret-morda-fon-23.jpg"
+        alt="Lynx face"
+      />
+    </div>
+    <div class="hero-section__content">
+      <div>
+        <div class="hero__title">
+          <h1>
+            <span class="hero__title--name">Joakym Girard,</span>
+            <br />
+            <span class="hero__title--job">web</span>
+            <br />
+            <span class="hero__title--job">developer</span>
+          </h1>
+        </div>
+        <div class="description">
+          <p>
+            I’m a Web Developer based in Sherbrooke, Canada. Even though my
+            journey started as a network oriented IT, coding is my passion and my new
+            professional career focus. Developing applications for the web has
+            become my drive.
+          </p>
+        </div>
+      </div>
+      <div class="hero__buttons">
+        <button class="btn hero__btn-resume">GET MY RESUME</button>
+        <button class="btn hero__btn-email" [matMenuTriggerFor]="menu">
+          JOAKYMGIRARD@GMAIL.COM
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>OPEN EMAIL IN CLIENT</button>
+          <button mat-menu-item>COPY EMAIL ADDRESS</button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+.hero-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section {
+  width: min-content;
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hero__profil-picture {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+.hero__title--name {
+  font-size: 3rem;
+}
+
+.hero__title--job {
+  line-height: 8rem;
+  font-size: 8rem;
+}
+
+p {
+  margin: 3rem 0;
+}
+
+.hero__buttons {
+  font-size: .8rem;
+}
+
+.hero__btn-resume {
+  background: #1f2937;
+  color: white;
+}
+
+.hero__btn-email {
+  border: 1px solid #1f2937;
+  transition: all 200ms ;
+
+  &:hover {
+    background: #1f2937;
+    color: white;
+  }
+}
