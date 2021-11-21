@@ -1,0 +1,54 @@
+.contact-section {
+  background: black;
+  color: white;
+  padding: 4rem;
+  text-align: center;
+}
+
+.contact-container {
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 40%;
+  overflow: auto;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding: 3rem 0;
+  background: rgb(255, 226, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 226, 0, 1) 35%,
+    rgba(81, 242, 255, 1) 64%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: auto;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.turn-white {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg)
+    brightness(108%) contrast(101%);
+}
+
+.contact-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -7,10 +7,14 @@ import { ProjectSectionComponent } from './project-section/project-section.compo
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectCardComponent } from './project-section/project-card/project-card.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +24,19 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     HeroSectionComponent,
     ProjectCardComponent,
     AboutSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
