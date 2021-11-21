@@ -1,0 +1,20 @@
+.project-container {
+  padding: 4rem;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding: 3rem 0;
+  background: rgb(255, 81, 245);
+  background: linear-gradient(45deg, rgba(255,81,245,1) 35%, rgba(255,226,0,1) 64%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: auto;
+}

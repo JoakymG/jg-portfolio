@@ -1,0 +1,16 @@
+.bg-wave {
+  height: 16rem;
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -4px;
+}
+
+.wave-top {
+  background-image: url('../assets/images/waves/wave_top.svg');
+}
+
+.wave-down {
+  background-image: url('../assets/images/waves/wave_down.svg');
+}

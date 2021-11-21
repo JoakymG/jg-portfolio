@@ -8,13 +8,17 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
+import { ProjectCardComponent } from './project-section/project-card/project-card.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     ProjectSectionComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    ProjectCardComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+<div class="project-card">
+  <div class="card-container">
+    <div class="project-side">
+      <div class="project-tools">
+        <h3>Tech Stack used</h3>
+        <p>In this project, I employed the following technologies:</p>
+        <ul>
+          <li *ngFor="let tool of projects[0].techStack">
+            <img class="turn-white" [src]="tool.imagePath" [alt]="tool.name" />
+            <span>{{ tool.name }}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="project-links">
+        <a class="btn btn-light" href="">LIVE VIEW</a>
+        <a class="btn btn-light" href="">GITHUB</a>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">Portfolio</h3>
+      <p *ngFor="let description of projects[0].description">
+        {{ description }}
+      </p>
+      <br />
+      <h3>Challenges</h3>
+      <p *ngFor="let challenge of projects[0].challenges">
+        {{ challenge }}
+      </p>
+      <div>
+        <img
+          class="project-image"
+          [src]="projects[0].visual"
+          alt="portfolio"
+        />
+      </div>
+    </div>
+  </div>
+</div>
