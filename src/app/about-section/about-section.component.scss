@@ -1,0 +1,99 @@
+.about-section {
+  padding: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding: 3rem 0;
+  background: rgb(81, 242, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(81, 242, 255, 1) 35%,
+    rgba(255, 81, 245, 1) 64%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: auto;
+}
+
+.about-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 70%;
+  overflow: auto;
+}
+
+.about__profile-picture {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 2rem;
+}
+
+button {
+  width: 12rem;
+  margin-bottom: 3rem;
+}
+
+.about-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .link-image {
+    width: 2rem;
+  }
+}
+
+.about-content {
+  width: 100%;
+  text-align: left;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.about-tools {
+  text-align: left;
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 2rem;
+  }
+
+  .turn-white {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(108%) contrast(101%);
+  }
+}

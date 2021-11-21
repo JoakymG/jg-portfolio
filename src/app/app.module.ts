@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import { ProjectCardComponent } from './project-section/project-card/project-card.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutSectionComponent } from './about-section/about-section.component';
     ProjectSectionComponent,
     HeroSectionComponent,
     ProjectCardComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,

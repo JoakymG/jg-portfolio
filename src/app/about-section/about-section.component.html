@@ -1,1 +1,42 @@
-<p>about-section works!</p>
+<div class="about-section">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="about-side">
+      <img class="about__profile-picture" src="https://img5.goodfon.com/wallpaper/nbig/5/d1/rys-dikaia-koshka-vzgliad-priroda-portret-morda-fon-23.jpg" alt="" />
+      <button class="btn btn-dark-border">GET MY RESUME</button>
+      <div class="about-links">
+        <div>
+          <a class="linkedin-link" href="#">
+            <img class="link-image" src="https://www.damiandemasi.com/static/media/icon-linkedin.2cad1ba9.webp" alt="linkedin">
+          </a>
+          <p>Linkedin</p>
+        </div>
+        <div>
+          <a class="github-link" href="#">
+            <img class="link-image" src="https://www.damiandemasi.com/static/media/icon-github.8d8f94f2.webp" alt="GitHub">
+          </a>
+          <p>GitHub</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <h3>Hi! 👋 I'm Joakym</h3>
+      <p *ngFor="let i of [0,1,2,3,4,5,6,7,9,10,11]">
+        My interest in technology started when I was a teenager and dial-up
+        Internet connections were booming. I still remember plugging in a 10
+        metres telephone cable to my PC from the phone box every night to avoid
+        keeping my family’s phone line busy during peak hours.
+      </p>
+      <div class="about-tools">
+        <h3>My tech stack</h3>
+        <p>I'm proficient with the following relevant technologies:</p>
+        <ul>
+          <li *ngFor="let tool of techStack">
+            <img [src]="tool.imagePath" [alt]="tool.name" />
+            <span>{{ tool.name }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,7 @@
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: -4px;
+  padding-bottom: 2rem;
 }
 
 .wave-top {
@@ -13,4 +13,13 @@
 
 .wave-down {
   background-image: url('../assets/images/waves/wave_down.svg');
+}
+
+.reverse {
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
 }
