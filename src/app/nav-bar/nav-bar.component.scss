@@ -1,7 +1,8 @@
 .nav-bar-container {
   width: 100%;
   background: rgba(232, 232, 232, 0.8);
-  position: absolute;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .nav-bar {

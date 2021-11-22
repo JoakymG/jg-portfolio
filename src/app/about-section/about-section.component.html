@@ -21,11 +21,8 @@
     </div>
     <div class="about-content">
       <h3>Hi! 👋 I'm Joakym</h3>
-      <p *ngFor="let i of [0,1,2,3,4,5,6,7,9,10,11]">
-        My interest in technology started when I was a teenager and dial-up
-        Internet connections were booming. I still remember plugging in a 10
-        metres telephone cable to my PC from the phone box every night to avoid
-        keeping my family’s phone line busy during peak hours.
+      <p *ngFor="let p of myStory">
+        {{ p }}
       </p>
       <div class="about-tools">
         <h3>My tech stack</h3>

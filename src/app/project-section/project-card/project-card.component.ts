@@ -59,7 +59,7 @@ export class ProjectCardComponent implements OnInit {
           name: 'GITHUB',
           imagePath:
             'https://www.damiandemasi.com/static/media/icon-github.8d8f94f2.webp',
-        }
+        },
       ],
     },
   ];
