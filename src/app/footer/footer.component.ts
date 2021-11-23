@@ -14,7 +14,6 @@ export class FooterComponent implements OnInit {
   }
 
   onCopy() {
-    console.log('click');
     this.eventCopy.emit(event);
   }
 }

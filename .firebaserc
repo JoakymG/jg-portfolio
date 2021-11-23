@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "joakym-girard-portfolio"
+  },
+  "targets": {
+    "joakym-girard-portfolio": {
+      "hosting": {
+        "jg-portfolio": [
+          "joakymgirard"
+        ]
+      }
+    }
+  }
+}

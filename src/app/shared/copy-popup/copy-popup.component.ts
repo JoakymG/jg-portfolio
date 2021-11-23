@@ -10,8 +10,6 @@ export class CopyPopupComponent implements OnInit {
   @ViewChild('popup') popup!: ElementRef<HTMLElement>;
   @Input()
   set event(event: Event) {
-    console.log('event');
-
     this.onCopy();
   }
 

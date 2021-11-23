@@ -14,7 +14,6 @@ export class HeroSectionComponent implements OnInit {
   }
 
   onCopy() {
-    console.log('click');
     this.eventCopy.emit(event);
   }
 
