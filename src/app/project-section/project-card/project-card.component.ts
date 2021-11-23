@@ -7,7 +7,9 @@ interface techStack {
 
 interface project {
   name: String;
+  website: String;
   description: Array<string>;
+  repository: String;
   challenges: Array<string>;
   visual: String;
   techStack: Array<techStack>;
@@ -22,10 +24,12 @@ export class ProjectCardComponent implements OnInit {
   projects: Array<project> = [
     {
       name: 'Portfolio',
+      website: 'https://joakymgirard.web.app/',
       description: [
         'This project was one of my first experience for breaking my way out of tutorial hell 👹. I also wanted this project to serve me as a display of my frontend skills to potential employers or collaborators.',
         'By the time I decided to start working on this project I had just finished learning about CSS and Angular. I wanted to code a project to implement all of this knowledge.',
       ],
+      repository: 'https://github.com/JoakymG/jg-portfolio',
       challenges: [
         'At the start, this project seemed easier than at first, it always does, but I quickly realise it would take me a few more hours of CSS than anticipated 😅. Because a Portfolio is mainly focused on design, being a logic dominant person had me out of my confort zone.',
         "One of the biggest challenge was time. I decided that a would build a portfolio with maybe one project over the course of one weekend. This may be too short in time as you might think, well it was 🤭. I've learned very important things: compromise, time management and under pressure creativity.",
