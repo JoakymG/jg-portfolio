@@ -1,10 +1,10 @@
 <section id="about" class="about-section">
-  <h2>About Me</h2>
-  <div class="about-container">
+  <h2 class="section-title bg-text-clip">About Me</h2>
+  <div class="about-container flex-start mg-auto">
     <div class="about-side">
       <img class="about__profile-picture" src="https://img5.goodfon.com/wallpaper/nbig/5/d1/rys-dikaia-koshka-vzgliad-priroda-portret-morda-fon-23.jpg" alt="" />
       <a class="btn btn-dark-border" href="../../assets/files/Joakym_Girard_Resume.pdf" target="_blank" rel="noreferrer">GET MY RESUME</a>
-      <div class="about-links">
+      <div class="about-links flex-center">
         <div>
           <a class="linkedin-link" href="https://www.linkedin.com/in/joakym-girard-739370226/" target="_blank" rel="noreferrer">
             <img class="link-image" src="https://www.damiandemasi.com/static/media/icon-linkedin.2cad1ba9.webp" alt="linkedin">
@@ -28,7 +28,7 @@
         <h3>My tech stack</h3>
         <p>I'm proficient with the following relevant technologies:</p>
         <ul>
-          <li *ngFor="let tool of techStack">
+          <li class="flex-center" *ngFor="let tool of techStack">
             <img [src]="tool.imagePath" [alt]="tool.name" />
             <span>{{ tool.name }}</span>
           </li>

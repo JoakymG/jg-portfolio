@@ -1,9 +1,9 @@
-<section id="contact" class="contact-section">
-  <h2>Contact</h2>
-  <div class="contact-container">
+<section id="contact" class="section-black">
+  <h2 class="section-title bg-text-clip">Contact</h2>
+  <div class="contact-container flex-center mg-auto">
     <h3>Let's get in touch!</h3>
     <img class="turn-white" src="../../assets/images/chat.png" alt="">
-    <div class="contact-links">
+    <div class="contact-links flex-center">
       <button class="btn btn-light" [matMenuTriggerFor]="menu">
         JOAKYMGIRARD@GMAIL.COM
       </button>
@@ -11,7 +11,7 @@
         <a mat-menu-item href="mailto:joakymgirard@gmail.com" target="_blank" rel="nonreferrer">OPEN EMAIL IN CLIENT</a>
         <button mat-menu-item [cdkCopyToClipboard]="'joakymgirard@gmail.com'" (click)="onCopy()">COPY EMAIL ADDRESS</button>
       </mat-menu>
-      <button class="btn btn-light">MESSAGE ME ON LINKEDIN</button>
+      <a class="btn btn-light" href="https://www.linkedin.com/in/joakym-girard-739370226/" target="_blank" rel="noreferrer">MESSAGE ME ON LINKEDIN</a>
     </div>
     <p>You can send me an email or reach out directly on Linkedin</p>
   </div>

@@ -1,33 +1,16 @@
 .footer-section {
-  padding-top: 4rem;
   text-align: center;
 }
 
 .footer-container {
-  margin: auto;
   padding: 1rem;
   margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   gap: 12rem;
   width: 80%;
 }
 
 .footer__nav {
-  display: flex;
   flex-direction: column;
-}
-
-h1 {
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: #1f2937;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-weight: 800;
-  padding-bottom: 1rem;
 }
 
 .footer__title--name {
@@ -50,7 +33,6 @@ h1 {
 
 .about-links {
   margin-top: 3.5rem;
-  display: flex;
   justify-content: space-evenly;
   gap: 1rem;
 

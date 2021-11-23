@@ -39,25 +39,42 @@ $jg-portfolio-theme: mat.define-light-theme(
   src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto&display=swap");
 }
 
-body {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
 html,
 body {
+  margin: 0;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+
   scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  width: 100%;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+header, section {
+  padding: 4rem;
+  text-align: center;
+}
+
+.section-black {
+  background: black;
+  color: white;
+}
+
+h1.title {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #1f2937;
+  flex-direction: column;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+h2.section-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding: 3rem 0;
 }
 
 h3 {
@@ -67,6 +84,21 @@ h3 {
 p {
   font-size: 1rem;
   font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.bg-text-clip {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: auto;
 }
 
 .btn {
@@ -109,6 +141,22 @@ p {
   }
 }
 
+.mg-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin: 0 auto 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
