@@ -4,7 +4,13 @@
     <h3>Let's get in touch!</h3>
     <img class="turn-white" src="../../assets/images/chat.png" alt="">
     <div class="contact-links">
-      <button class="btn btn-light">JOAKYMGIRARD@GMAIL.COM</button>
+      <button class="btn btn-light" [matMenuTriggerFor]="menu">
+        JOAKYMGIRARD@GMAIL.COM
+      </button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item href="mailto:joakymgirard@gmail.com" target="_blank" rel="nonreferrer">OPEN EMAIL IN CLIENT</a>
+        <button mat-menu-item [cdkCopyToClipboard]="'joakymgirard@gmail.com'" (click)="onCopy()">COPY EMAIL ADDRESS</button>
+      </mat-menu>
       <button class="btn btn-light">MESSAGE ME ON LINKEDIN</button>
     </div>
     <p>You can send me an email or reach out directly on Linkedin</p>

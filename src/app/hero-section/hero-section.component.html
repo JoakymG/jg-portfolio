@@ -28,13 +28,13 @@
         </div>
       </div>
       <div class="hero__buttons">
-        <button class="btn hero__btn-resume">GET MY RESUME</button>
+        <a class="btn hero__btn-resume" href="../../assets/files/Joakym_Girard_Resume.pdf" target="_blank" rel="noreferrer">GET MY RESUME</a>
         <button class="btn btn-dark-border" [matMenuTriggerFor]="menu">
           JOAKYMGIRARD@GMAIL.COM
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>OPEN EMAIL IN CLIENT</button>
-          <button mat-menu-item>COPY EMAIL ADDRESS</button>
+          <a mat-menu-item href="mailto:joakymgirard@gmail.com" target="_blank" rel="nonreferrer">OPEN EMAIL IN CLIENT</a>
+          <button mat-menu-item [cdkCopyToClipboard]="'joakymgirard@gmail.com'" (click)="onCopy()">COPY EMAIL ADDRESS</button>
         </mat-menu>
       </div>
     </div>

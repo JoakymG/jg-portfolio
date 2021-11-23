@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hero-section',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-section.component.scss']
 })
 export class HeroSectionComponent implements OnInit {
+  @Output() eventCopy = new EventEmitter<Event>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onCopy() {
+    console.log('click');
+    this.eventCopy.emit(event);
   }
 
 }

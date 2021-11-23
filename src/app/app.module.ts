@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProjectSectionComponent } from './project-section/project-section.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
-
+import {ClipboardModule} from '@angular/cdk/clipboard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -15,6 +15,7 @@ import { ProjectCardComponent } from './project-section/project-card/project-car
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { CopyPopupComponent } from './shared/copy-popup/copy-popup.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     AboutSectionComponent,
     ContactSectionComponent,
     FooterComponent,
+    CopyPopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { FooterComponent } from './footer/footer.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

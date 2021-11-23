@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jg-portfolio';
+  public copyEvent!: Event;
+
+
+  eventCopy(event: Event) {
+    this.copyEvent = event;
+  }
 }
